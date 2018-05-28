@@ -1,0 +1,17 @@
+/*
+* @Author: EchoPlus
+* @Date:   2018-05-28 08:33:17
+* @Last Modified by:   EchoPlus
+* @Last Modified time: 2018-05-28 08:41:22
+*/
+.nav-simple{
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #ddd;
+    background : #fff;
+}
+.nav-simple .logo{
+    font-size: 26px;
+    font-weight: bold;
+    color: #c60023
+}

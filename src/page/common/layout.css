@@ -1,0 +1,99 @@
+/*
+* @Author: EchoPlus
+* @Date:   2018-05-27 22:05:56
+* @Last Modified by:   EchoPlus
+* @Last Modified time: 2018-05-28 16:16:32
+*/
+
+/*css reset*/
+*{
+    /*都默认设置为0，避免一些标签默认有padding时，会出现意外*/
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f6f6f6;
+    /*设置字体默认大小，字间距，默认字体*/
+    font: 12px/1.5 tahoma,arial,microsoft YaHei,sans-serif;
+}
+li{
+    list-style: none;
+
+}
+img{
+    display: block;
+    border: none;
+}
+label{
+    cursor: pointer;
+}
+/*设置复选框的指向模型*/
+input[type='checkbox']{
+    cursor: pointer;
+}
+
+/*定宽布局*/
+.w{
+    widows: 1080px;
+    /*居中*/
+    margin: 0 auto;
+    position: relative;
+    /*清除浮动*/
+    overflow: hidden;
+}
+/*全局通用样式=======================*/
+.hide{
+    /*隐藏样式*/
+    display: none;
+}
+
+/*超链接样式*/
+.link{
+    color: #999;
+    cursor: pointer;
+    text-decoration: none;
+}
+/*浮动样式*/
+.link:hover{
+    color: #e80012;
+}
+.link-text{
+    color: #999;
+    text-decoration: none;
+}
+
+/*按钮的设置 btn*/
+.btn{
+    display: inline-block;
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    /*防止其他样式的冲突*/
+    vertical-align: middle;
+    border: none;
+    background-color: #c60023;
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn-mini{
+    height: 25px;
+    line-height: 25px;
+    padding: 0 10px;
+    font-size: 12px;
+}
+
+/*load的设置*/
+.loading{
+    margin: 10px auto;
+    display: block;
+    width: 65px;
+    height: 65px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: url(../../image/icon/loading.gif) no-repeat;
+    opacity: .6;
+}

@@ -2,7 +2,7 @@
 * @Author: EchoPlus
 * @Date:   2018-05-26 16:10:43
 * @Last Modified by:   EchoPlus
-* @Last Modified time: 2018-05-27 15:47:04
+* @Last Modified time: 2018-05-28 16:31:27
 */
 var webpack           = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
@@ -12,10 +12,11 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var WEBPACK_ENV       = process.env.WEBPACK_ENV || 'dev'; //该变量区分是线上还是开发环境
 console.log(WEBPACK_ENV);
 
-var packPluginConfig  = function(name){
+var packPluginConfig  = function(name,title){
            return{
             template : './src/view/'+  name +'.html',
             filename : 'view/'+  name +'.html',
+            title    : title,
             inject   : true,
             hash     : true,  
             chunks  : ['common',name]
@@ -27,6 +28,7 @@ var config = {
         'common' : ['./src/page/common/index.js'],
         'index'  : ['./src/page/index/index.js'],
         'login'  : ['./src/page/login/index.js'],
+        'result'  : ['./src/page/result/index.js'],
     },
     output : {
         path:'./dist',
@@ -46,8 +48,26 @@ var config = {
          },
      { 
             test  : /\.(gif|png|jpg|woff|svg|eot|ttf)\??.*$/,
-            loader : 'url-loader?limit=100&name=resource/[name].[ext] ' },
+            
+            loader : 'url-loader?limit=100&name=resource/[name].[ext]'
+        },
+         { 
+            test  : /\.string$/,
+            
+            loader : 'html-loader'
+        }
      ]
+  },
+  resolve :{
+        alias : {
+            util             : __dirname + '/src/util',
+            page             : __dirname + '/src/page',
+            image            : __dirname + '/src/image',
+            service          : __dirname + '/src/service',
+            //用于添加module
+            node_modules     : __dirname + '/node_modules'
+
+        }
   },
     plugins:[
         //独立通用模块打包到base.js
@@ -58,8 +78,9 @@ var config = {
         //将css文件单独打包
         new ExtractTextPlugin("/css/[name].css"),
         //对html模块的处理
-        new HtmlWebpackPlugin(packPluginConfig('index')),
-        new HtmlWebpackPlugin(packPluginConfig('login'))
+        new HtmlWebpackPlugin(packPluginConfig('index','首页')),
+        new HtmlWebpackPlugin(packPluginConfig('login','用户登录')),
+        new HtmlWebpackPlugin(packPluginConfig('result','操作结果')),
     ]
 };
 
