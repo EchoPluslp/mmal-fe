@@ -2,7 +2,7 @@
 * @Author: EchoPlus
 * @Date:   2018-05-28 14:39:57
 * @Last Modified by:   EchoPlus
-* @Last Modified time: 2018-05-28 15:13:29
+* @Last Modified time: 2018-05-29 16:09:31
 */
 /*通用的头部导航设置*/
 .header .logo{
@@ -13,6 +13,7 @@
     font-size: 36px;
     color: #c60023;
     font-weight: bold;
+    text-decoration: none;
 }
 .header .search-con{
     /*设值search-con 可用于左右布局*/
@@ -33,4 +34,14 @@
     /*宽度可文本框一致40+2+2*/
     height: 44px;
     width: 88px
+}
+/*面包屑导航*/
+.crumb{
+    margin-bottom: 15px;
+    height: 50px;
+    line-height: 50px;
+    background : #eee;
+    color: #888;
+    font-size: 14px;
+    border-top: 2px solid #c60023;
 }

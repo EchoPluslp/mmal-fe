@@ -2,7 +2,7 @@
 * @Author: EchoPlus
 * @Date:   2018-05-28 09:14:59
 * @Last Modified by:   EchoPlus
-* @Last Modified time: 2018-05-28 16:09:28
+* @Last Modified time: 2018-05-29 17:52:27
 */
 'use strict';
 require('./index.css');
@@ -16,7 +16,7 @@ var navSide = {
         navList : [
             {name : 'user-center' , desc : '个人中心' ,   href : './user-center.html'},
             {name : 'order-list' , desc : '我的订单' ,    href : './order-list.html'},
-            {name : 'pass-update' , desc : '修改密码' ,   href : './pass-update.html'},
+            {name : 'user-pass-update' , desc : '修改密码' ,   href : './user-pass-update.html'},
             {name : 'about' , desc : '关于mmall' ,        href : './about.html'}
         ] 
     },

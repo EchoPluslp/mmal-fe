@@ -2,7 +2,7 @@
 * @Author: EchoPlus
 * @Date:   2018-05-28 08:33:17
 * @Last Modified by:   EchoPlus
-* @Last Modified time: 2018-05-28 08:41:22
+* @Last Modified time: 2018-05-29 16:10:09
 */
 .nav-simple{
     height: 60px;
@@ -13,5 +13,6 @@
 .nav-simple .logo{
     font-size: 26px;
     font-weight: bold;
-    color: #c60023
+    color: #c60023;
+    text-decoration: none;
 }

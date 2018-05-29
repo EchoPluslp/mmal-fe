@@ -1,0 +1,16 @@
+/*
+* @Author: EchoPlus
+* @Date:   2018-05-29 15:58:25
+* @Last Modified by:   EchoPlus
+* @Last Modified time: 2018-05-29 16:25:09
+*/
+.form-line{
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+}
+.form-line .lable{
+    display: inline-block;;
+    width: 60px;
+    text-align: center;
+}

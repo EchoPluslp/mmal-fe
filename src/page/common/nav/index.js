@@ -2,7 +2,7 @@
 * @Author: EchoPlus
 * @Date:   2018-05-28 09:14:59
 * @Last Modified by:   EchoPlus
-* @Last Modified time: 2018-05-28 13:33:48
+* @Last Modified time: 2018-05-29 13:36:06
 */
 'use strict';
 require('./index.css');
@@ -26,7 +26,7 @@ var nav = {
         });
         //注册点击事件
         $('.js-register').click(function(){
-            window.location.href = './register.html'
+            window.location.href = './user-register.html'
         });
         //退出登录 点击事件
         $('.js-logout').click(function(){

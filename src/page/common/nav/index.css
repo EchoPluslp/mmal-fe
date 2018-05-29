@@ -2,7 +2,7 @@
 * @Author: EchoPlus
 * @Date:   2018-05-28 09:14:47
 * @Last Modified by:   EchoPlus
-* @Last Modified time: 2018-05-28 09:42:09
+* @Last Modified time: 2018-05-28 17:28:53
 */
 .nav{
     background-color: #eee;
@@ -12,7 +12,7 @@
 /*用户导航*/
 .nav .user{
     float: left;
-}
+} 
 .nav .user.login{
     display: none;
 }

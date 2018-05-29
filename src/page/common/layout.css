@@ -2,7 +2,7 @@
 * @Author: EchoPlus
 * @Date:   2018-05-27 22:05:56
 * @Last Modified by:   EchoPlus
-* @Last Modified time: 2018-05-28 16:16:32
+* @Last Modified time: 2018-05-29 16:16:04
 */
 
 /*css reset*/
@@ -39,6 +39,23 @@ input[type='checkbox']{
     margin: 0 auto;
     position: relative;
     /*清除浮动*/
+    overflow: hidden;
+}
+/*panel，放东西的容器*/
+.panel{
+    padding: 10px;
+    margin-bottom: 10px;
+    background : #fff;
+}
+.panel .panel-title{
+    padding: 10px;
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+}
+.panel .panel-body{
+    padding: 10px;
     overflow: hidden;
 }
 /*全局通用样式=======================*/

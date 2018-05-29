@@ -2,7 +2,7 @@
 * @Author: EchoPlus
 * @Date:   2018-05-27 17:38:03
 * @Last Modified by:   EchoPlus
-* @Last Modified time: 2018-05-27 22:05:17
+* @Last Modified time: 2018-05-28 21:04:19
 */
 'use strict';
 //引入Hogan
@@ -10,15 +10,15 @@ var Hogan = require('hogan.js');
 var conf = {
     serverHost : ''
 };
-var _mm = {
+var _mm = { 
     //网络请求
     request : function(param){
         var _this = this;
         $.ajax({
             type         : param.method  || 'get',
             url          : param.url     || '',
-            dateType     : param.type    || 'json',
-            date         : param.data    || '',
+            dataType     : param.type    || 'json',
+            data         : param.data    || '',
             success      : function(res){
                 //0 状态请求成功
                     if(0 === res.status){
@@ -85,7 +85,7 @@ var _mm = {
     //进行登陆处理
     doLogin : function(){
         //跳转到登陆页面！！！ 并带上从那个页面跳转的信息
-        window.location.href = './login.html?redirect = ' + encodeURIComponent(window.location.href);
+        window.location.href = './user-login.html?redirect = ' + encodeURIComponent(window.location.href);
     },
     //统一主跳转
     goHome  : function(){

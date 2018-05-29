@@ -2,7 +2,7 @@
 * @Author: EchoPlus
 * @Date:   2018-05-28 16:27:18
 * @Last Modified by:   EchoPlus
-* @Last Modified time: 2018-05-28 16:49:01
+* @Last Modified time: 2018-05-28 16:55:12
 */
 'use strict';
 
@@ -17,5 +17,4 @@ $(function(){
         $element = $('.' + type + '-success');
         //显示对应的提示元素
     $element.show;
-    
 })
