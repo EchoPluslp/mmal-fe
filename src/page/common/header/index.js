@@ -2,7 +2,7 @@
 * @Author: EchoPlus
 * @Date:   2018-05-28 14:39:50
 * @Last Modified by:   EchoPlus
-* @Last Modified time: 2018-05-28 15:20:48
+* @Last Modified time: 2018-05-30 10:13:19
 */
 'use strict';
 require('./index.css');
@@ -11,6 +11,7 @@ var _mm     = require('util/mm.js');
 var header = {
     init : function(){
         this.bindEvent();
+        this.onload();
     },
     onload : function(){
         //搜索后的信息回填

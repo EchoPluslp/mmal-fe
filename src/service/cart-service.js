@@ -2,7 +2,7 @@
 * @Author: EchoPlus
 * @Date:   2018-05-28 11:26:01
 * @Last Modified by:   EchoPlus
-* @Last Modified time: 2018-05-28 13:31:22
+* @Last Modified time: 2018-06-03 14:36:24
 */
 /*
 * @Author: EchoPlus
@@ -24,6 +24,15 @@ var _cart = {
             success : resolve,
             error : reject
         });
-    }
+    },
+    //添加到购物车
+    addToCart    :function(productInfo,resolve,reject){
+        _mm.request({
+            url     : _mm.getServerUrl('/cart/add.do'),
+            data    : productInfo,
+            success : resolve,
+            error   : reject
+        });
+    },
 }
 module.exports = _cart;

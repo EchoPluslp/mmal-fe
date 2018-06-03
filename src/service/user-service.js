@@ -2,7 +2,7 @@
 * @Author: EchoPlus
 * @Date:   2018-05-28 10:38:45
 * @Last Modified by:   EchoPlus
-* @Last Modified time: 2018-05-29 18:00:20
+* @Last Modified time: 2018-05-30 10:50:12
 */
 'use strict';
 // _代表自己写的工具类或者通用的东西
@@ -67,7 +67,7 @@ var _user = {
     checkAnswer : function(userInfo,resolve,reject){
         _mm.request({
             url     : _mm.getServerUrl('/user/forget_check_answer.do'),
-            data    : userInfo, 
+            data    : userInfo,
             method  : 'POST',
             success : resolve,
             error   : reject
